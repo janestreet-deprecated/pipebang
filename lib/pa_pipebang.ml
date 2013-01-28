@@ -4,7 +4,7 @@ let f =
      inherit Ast.map as super
      method expr = function
        | Ast.ExApp(_loc,Ast.ExApp(_,Ast.ExId(_,Ast.IdLid(_,"|!")),x),y)  ->
-         <:expr<$y$ $self#expr x$>>
+         <:expr<$self#expr y$ $self#expr x$>>
        | Ast.ExId(_loc,Ast.IdLid(_,"|!")) ->
          Loc.raise _loc (Failure "|! must be applied to two arguments")
        | e -> super#expr e

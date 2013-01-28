@@ -1,6 +1,6 @@
 # OASIS_START
-# DO NOT EDIT (digest: ba54828a99b31a7be8b5f3f709e5e630)
-version = "108.00.02"
+# DO NOT EDIT (digest: c32ede4483092f54b4a166e92912b279)
+version = "108.07.00"
 description = "Syntax extension writing inline tests"
 requires = "camlp4 type_conv oUnit"
 archive(syntax, preprocessor) = "pa_pipebang.cma"
