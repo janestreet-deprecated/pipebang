@@ -9,4 +9,5 @@ let f =
          Loc.raise _loc (Failure (s ^ " must be applied to two arguments"))
        | e -> super#expr e
   end in
-AstFilters.register_str_item_filter f#str_item
+AstFilters.register_str_item_filter f#str_item;
+AstFilters.register_topphrase_filter f#str_item
