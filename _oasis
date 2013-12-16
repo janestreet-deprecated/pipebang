@@ -19,7 +19,8 @@ Library pa_pipebang
   Path:               lib
   Modules:            Pa_pipebang
   FindlibName:        pa_pipebang
-  BuildDepends:       camlp4.lib,
+  BuildDepends:       camlp4.extend,
+                      camlp4.lib,
                       camlp4.quotations
   XMETAType:          syntax
   XMETARequires:      camlp4
