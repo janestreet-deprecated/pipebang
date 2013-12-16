@@ -1,10 +1,14 @@
 # OASIS_START
-# DO NOT EDIT (digest: 5757dc982e4bf8f92666250c7d146782)
-version = "109.28.00"
+# DO NOT EDIT (digest: 1f1aa4adae55c38eb735f5825181f7a3)
+version = "109.28.01"
 description = "Syntax extension to transform x |! f into f x"
 requires = "camlp4"
 archive(syntax, preprocessor) = "pa_pipebang.cma"
 archive(syntax, toploop) = "pa_pipebang.cma"
+archive(syntax, byte) = "pa_pipebang.cma"
+archive(syntax, byte, plugin) = "pa_pipebang.cma"
+archive(syntax, native) = "pa_pipebang.cmxa"
+archive(syntax, native, plugin) = "pa_pipebang.cmxs"
 exists_if = "pa_pipebang.cma"
 # OASIS_STOP
 
