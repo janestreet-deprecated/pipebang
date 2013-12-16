@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 2186e611766eb2becc066cfd08832279)
+# DO NOT EDIT (digest: a8348ab450d01b7cc22c2580f8cddfca)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -15,6 +15,7 @@
 "_darcs": not_hygienic
 # Library pa_pipebang
 "lib/pa_pipebang.cmxs": use_pa_pipebang
+<lib/*.ml{,i}>: package(camlp4.extend)
 <lib/*.ml{,i}>: package(camlp4.lib)
 <lib/*.ml{,i}>: package(camlp4.quotations)
 # OASIS_STOP
