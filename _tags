@@ -18,4 +18,4 @@
 <lib/*.ml{,i}>: package(camlp4.lib)
 <lib/*.ml{,i}>: package(camlp4.quotations)
 # OASIS_STOP
-<lib/pa_pipebang.ml>: syntax_camlp4o,pkg_camlp4.extend
+<lib/pa_pipebang.ml>: syntax_camlp4o
