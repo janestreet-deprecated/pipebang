@@ -2,7 +2,7 @@ open Camlp4.PreCast
 let f =
   object (self)
      inherit Ast.map as super
-     method expr = function
+     method! expr = function
        | Ast.ExApp(_loc,Ast.ExApp(_,Ast.ExId(_,Ast.IdLid(_,("|!" | "|>"))),x),y)  ->
          <:expr<$self#expr y$ $self#expr x$>>
        | Ast.ExId(_loc,Ast.IdLid(_,("|!" | "|>" as s))) ->
