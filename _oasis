@@ -16,7 +16,7 @@ XStdFilesREADME:  false
 BuildTools:       ocamlbuild, camlp4o
 
 Library pa_pipebang
-  Path:               lib
+  Path:               src
   Modules:            Pa_pipebang
   FindlibName:        pa_pipebang
   BuildDepends:       camlp4.extend,
